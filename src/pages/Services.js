@@ -78,8 +78,8 @@ const Services = () => {
 		return (
 			<>
 				<SEO
-					title="Services - Mariya Udaipurwala"
-					description="Explore the comprehensive nutrition and diet services offered by Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
+					title="Services - Dr. Mariya Udaipurwala"
+					description="Explore the comprehensive nutrition and diet services offered by Dr. Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
 				/>
 				<div className="min-h-screen bg-gray-50 flex items-center justify-center">
 					<div className="text-center">
@@ -95,8 +95,8 @@ const Services = () => {
 		return (
 			<>
 				<SEO
-					title="Services - Mariya Udaipurwala"
-					description="Explore the comprehensive nutrition and diet services offered by Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
+					title="Services - Dr. Mariya Udaipurwala"
+					description="Explore the comprehensive nutrition and diet services offered by Dr. Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
 				/>
 				<div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
 					<div className="text-center bg-red-50 border border-red-200 rounded-lg p-8 max-w-2xl">
@@ -119,8 +119,8 @@ const Services = () => {
 	return (
 		<>
 			<SEO
-				title="Services - Mariya Udaipurwala"
-				description="Explore the comprehensive nutrition and diet services offered by Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
+				title="Services - Dr. Mariya Udaipurwala"
+				description="Explore the comprehensive nutrition and diet services offered by Dr. Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}

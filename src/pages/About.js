@@ -45,7 +45,7 @@ const About = () => {
 
 	const team = [
 		{
-			name: "Mariya Udaipurwala (Registered Dietitian)",
+			name: "Dr. Mariya Udaipurwala (Registered Dietitian)",
 			role: "Lead Nutritionist",
 			education: "Master's in Clinical Nutrition",
 			experience: "25+ Years",
@@ -70,8 +70,8 @@ const About = () => {
 	return (
 		<>
 			<SEO
-				title="About Mariya Udaipurwala"
-				description="Learn about Mariya Udaipurwala, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
+				title="About Dr. Mariya Udaipurwala"
+				description="Learn about Dr. Mariya Udaipurwala, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}
@@ -83,7 +83,7 @@ const About = () => {
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.8 }}>
 								<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-									Meet Mariya Udaipurwala
+									Meet Dr. Mariya Udaipurwala
 								</h1>
 								<p className="text-xl text-gray-600 mb-8">
 									A dedicated registered dietitian with over 25 years of
@@ -116,7 +116,7 @@ const About = () => {
 											👩‍⚕️
 										</div>
 										<h3 className="text-2xl font-semibold text-gray-900 mb-2">
-											Mariya Udaipurwala (RDN)
+											Dr. Mariya Udaipurwala (RDN)
 										</h3>
 										<p className="text-gray-600 mb-4">
 											Registered Dietitian Nutritionist
@@ -352,7 +352,7 @@ const About = () => {
 					<CtaIllustration />
 					<div className="max-w-4xl mx-auto text-center relative z-10">
 						<h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-							Ready to Meet Mariya Udaipurwala?
+							Ready to Meet Dr. Mariya Udaipurwala?
 						</h2>
 						<p className="text-xl text-primary-100 mb-8">
 							Schedule your first consultation and experience the difference that

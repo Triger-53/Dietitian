@@ -83,8 +83,8 @@ const Contact = () => {
 	return (
 		<>
 			<SEO
-				title="Contact Us - Mariya Udaipurwala"
-				description="Get in touch with Mariya Udaipurwala's nutritional office. Find our contact information, office hours, and send us a message through our contact form."
+				title="Contact Us - Dr. Mariya Udaipurwala"
+				description="Get in touch with Dr. Mariya Udaipurwala's nutritional office. Find our contact information, office hours, and send us a message through our contact form."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}

@@ -13,7 +13,7 @@ const AdminLogin = () => {
 
 		// Hardcoded credentials
 		const adminEmail = "mariya"
-		const adminPassword = "fk525351"
+		const adminPassword = "mu525351"
 
 		if (email === adminEmail && password === adminPassword) {
 			// Store login flag in localStorage

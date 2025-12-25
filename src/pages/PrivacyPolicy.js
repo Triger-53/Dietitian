@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
 								1. Introduction
 							</h2>
 							<p>
-								Welcome to Mariya Udaipurwala Nutrition Practice (“we,”
+								Welcome to Dr. Mariya Udaipurwala Nutrition Practice (“we,”
 								“our,” or “us”). We are committed to protecting your privacy
 								and ensuring the security of your personal and medical
 								information. This Privacy Policy explains how we collect, use,
@@ -279,7 +279,7 @@ const PrivacyPolicy = () => {
 									</a>
 								</li>
 								<li>
-									🏢 Mariya Udaipurwala Nutrition Practice, 123 Medical
+									🏢 Dr. Mariya Udaipurwala Nutrition Practice, 123 Medical
 									Center Dr, Suite 100, New York, NY 10001
 								</li>
 							</ul>

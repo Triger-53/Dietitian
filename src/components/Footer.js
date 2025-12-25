@@ -18,7 +18,7 @@ const Footer = () => {
 							<div className="relative">
 								<img
 									src="/logo.png"
-									alt="Mariya Udaipurwala"
+									alt="Mariya U."
 									className="h-12 w-12 object-contain rounded-full shadow-lg shadow-primary-500/20 group-hover:shadow-primary-600/30 transition-shadow duration-300"
 								/>
 								<div className="absolute inset-0 rounded-full border border-white/20 pointer-events-none"></div>
@@ -136,7 +136,7 @@ const Footer = () => {
 				<div className="border-t border-gray-800 mt-8 pt-8">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<p className="text-gray-400 text-sm">
-							© 2025 Mariya Udaipurwala Nutrition Practice. All rights reserved.
+							© 2025 Dr. Mariya Udaipurwala Nutrition Practice. All rights reserved.
 						</p>
 						<div className="flex space-x-6 mt-4 md:mt-0">
 							<Link

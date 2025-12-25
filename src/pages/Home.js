@@ -106,7 +106,7 @@ const Home = () => {
 	return (
 		<>
 			<SEO
-				title="Mariya Udaipurwala - Registered Dietitian Nutritionist"
+				title="Dr. Mariya Udaipurwala - Registered Dietitian Nutritionist"
 				description="Compassionate and professional nutrition counseling services for all ages. Mariya Udaipurwala is a certified Dietitian with over 25 years of experience."
 			/>
 			<div className="min-h-screen">
@@ -134,7 +134,7 @@ const Home = () => {
 									<div className="relative">
 										<img
 											src="/logo.png"
-											alt="Mariya Udaipurwala"
+											alt="Dr. Mariya Udaipurwala"
 											className="h-14 w-14 object-contain rounded-full shadow-xl shadow-primary-500/10 border border-white/50"
 										/>
 										<div className="absolute inset-0 rounded-full border border-white/20 pointer-events-none"></div>
@@ -142,7 +142,7 @@ const Home = () => {
 									<div className="flex flex-col">
 										<h2 className="text-2xl font-black tracking-tighter leading-none">
 											<span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-primary-700 to-primary-600">
-												Mariya Udaipurwala
+												Dr. Mariya Udaipurwala
 											</span>
 										</h2>
 										<div className="flex items-center space-x-2 mt-1">
@@ -159,7 +159,7 @@ const Home = () => {
 									<span className="gradient-text block">Our Priority</span>
 								</h1>
 								<p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
-									Experience exceptional <span className="font-semibold text-primary-700">diet & nutrition counseling</span> with Mariya Udaipurwala.
+									Experience exceptional <span className="font-semibold text-primary-700">diet & nutrition counseling</span> with Dr. Mariya Udaipurwala.
 									Compassionate, professional, and dedicated to improving
 									health for all ages.
 								</p>
@@ -197,7 +197,7 @@ const Home = () => {
 											</div>
 										</div>
 										<h3 className="text-3xl font-black text-gray-900 mb-3">
-											Mariya Udaipurwala
+											Dr. Mariya Udaipurwala
 										</h3>
 										<p className="text-lg text-primary-600 font-semibold mb-6">
 											Registered Dietitian Nutritionist
@@ -286,7 +286,7 @@ const Home = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 							<div>
 								<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-									Why Choose Mariya Udaipurwala?
+									Why Choose Dr. Mariya Udaipurwala?
 								</h2>
 								<div className="space-y-6">
 									<div className="flex items-start">

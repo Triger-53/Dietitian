@@ -24,7 +24,7 @@ const TermsOfService = () => {
 
 					<div className="space-y-8">
 						<p>
-							Welcome to Mariya Udaipurwala Nutrition Practice (“we,”
+							Welcome to Dr. Mariya Udaipurwala's Nutrition Practice (“we,”
 							“our,” or “us”). By accessing or using our website and
 							services, you (“you,” “user,” or “patient”) agree to these
 							Terms of Service (“Terms”). Please read them carefully before
@@ -40,7 +40,7 @@ const TermsOfService = () => {
 								1. Overview of Services
 							</h2>
 							<p>
-								Mariya Udaipurwala Nutrition Practice provides an online
+								Dr. Mariya Udaipurwala's Nutrition Practice provides an online
 								platform that allows users to:
 							</p>
 							<ul className="list-disc list-inside space-y-2 mt-2">
@@ -217,7 +217,7 @@ const TermsOfService = () => {
 							<p>
 								All content on this website (including logos, design, and
 								text) is the property of{" "}
-								<strong>Mariya Udaipurwala Nutrition Practice</strong> or
+								<strong>Dr. Mariya Udaipurwala's Nutrition Practice</strong> or
 								its licensors. You may not reproduce, modify, or distribute
 								any content without our written permission.
 							</p>
