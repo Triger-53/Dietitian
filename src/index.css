@@ -4,86 +4,90 @@
 
 @layer base {
   :root {
-    /* 🥗 Theme 1: Fresh & Natural (Default) */
-    /* Primary: Leaf Green (#2E7D32) scale */
-    --color-primary-50: 236 253 245;
-    /* #ECFDF5 */
-    --color-primary-100: 209 250 229;
-    /* #D1FAE5 */
-    --color-primary-200: 167 243 208;
-    /* #A7F3D0 */
-    --color-primary-300: 165 214 167;
-    /* #A5D6A7 (Soft Green) */
-    --color-primary-400: 74 222 128;
-    /* #4ADE80 */
-    --color-primary-500: 34 197 94;
-    /* #22C55E */
-    --color-primary-600: 46 125 50;
-    /* #2E7D32 (Leaf Green - MAIN) */
-    --color-primary-700: 21 128 61;
-    /* #15803D */
-    --color-primary-800: 22 101 52;
-    /* #166534 */
-    --color-primary-900: 20 83 45;
-    /* #14532D */
+    /* 🌍 International Theme (Default) */
 
-    /* Medical/Secondary: Soft Green (#A5D6A7) / Off-White (#FAFAFA) scale */
-    --color-medical-50: 250 250 250;
-    /* #FAFAFA (Background) */
-    --color-medical-100: 240 253 244;
-    --color-medical-200: 220 252 231;
-    --color-medical-300: 187 247 208;
-    --color-medical-400: 165 214 167;
-    /* #A5D6A7 (Soft Green) */
-    --color-medical-500: 134 239 172;
-    --color-medical-600: 74 222 128;
-    --color-medical-700: 34 197 94;
-    --color-medical-800: 22 163 74;
-    --color-medical-900: 20 83 45;
+    /* Primary: Deep Sage Green (#1F7A68) Scale */
+    /* Used for: Branding, Links, Secondary Buttons, Footer */
+    --color-primary-50: 239 249 247;
+    /* #EFF9F7 */
+    --color-primary-100: 226 242 238;
+    /* #E2F2EE */
+    --color-primary-200: 190 228 220;
+    /* #BEE4DC */
+    --color-primary-300: 107 193 178;
+    /* #6BC1B2 (Gradient Light) */
+    --color-primary-400: 70 155 138;
+    /* #469B8A */
+    --color-primary-500: 45 135 120;
+    /* #2D8778 */
+    --color-primary-600: 31 122 104;
+    /* #1F7A68 (MAIN SAGE) */
+    --color-primary-700: 22 100 86;
+    /* #166456 (Hover) */
+    --color-primary-800: 18 80 69;
+    /* #125045 */
+    --color-primary-900: 15 61 52;
+    /* #0F3D34 (Footer BG) */
 
-    /* Accent: Earth Brown (#6D4C41) scale */
-    --color-accent-50: 255 251 235;
-    --color-accent-100: 254 243 199;
-    --color-accent-200: 253 230 138;
-    --color-accent-300: 252 211 77;
-    --color-accent-400: 251 191 36;
-    --color-accent-500: 245 158 11;
-    --color-accent-600: 109 76 65;
-    /* #6D4C41 (Earth Brown) */
-    --color-accent-700: 180 83 9;
-    --color-accent-800: 146 64 14;
-    --color-accent-900: 120 53 15;
+    /* Medical/Neutral Scale (International Background System) */
+    /* Used for: Backgrounds, Text, Borders */
+    --color-medical-50: 250 250 248;
+    /* #FAFAF8 (Main BG - Warm Off-White) */
+    --color-medical-100: 242 245 243;
+    /* #F2F5F3 (Section BG) */
+    --color-medical-200: 230 241 238;
+    /* #E6F1EE (Soft Highlight) */
+    --color-medical-300: 227 232 230;
+    /* #E3E8E6 (Card Border) */
+    --color-medical-400: 224 229 227;
+    /* #E0E5E3 (Divider) */
+    --color-medical-500: 206 216 213;
+    /* #CED8D5 (Input Border) */
+    --color-medical-600: 154 166 164;
+    /* #9AA6A4 (Muted Text) */
+    --color-medical-700: 95 108 107;
+    /* #5F6C6B (Secondary Text) */
+    --color-medical-800: 60 70 70;
+    /* #3C4646 */
+    --color-medical-900: 28 28 28;
+    /* #1C1C1C (Primary Text) */
+
+    /* Accent: Soft Coral (#FF6F61) Scale */
+    /* Used for: Primary CTAs */
+    --color-accent-50: 255 245 245;
+    --color-accent-100: 255 230 228;
+    --color-accent-200: 255 200 196;
+    --color-accent-300: 255 160 150;
+    --color-accent-400: 255 135 125;
+    --color-accent-500: 255 111 97;
+    /* #FF6F61 (MAIN CORAL) */
+    --color-accent-600: 232 92 80;
+    /* #E85C50 (Hover) */
+    --color-accent-700: 200 60 50;
+    --color-accent-800: 160 40 30;
+    --color-accent-900: 120 20 10;
   }
 
+  /* Keep Theme 2 (Warm) as an option */
   .theme-warm {
-    /* 🍊 Theme 2: Warm & Appetizing */
-    /* Primary: Carrot Orange (#FF8F00) scale */
+    /* 🍊 Theme 2: Warm & Appetizing (Tweaked for Premium Feel) */
+    /* Primary: Carrot Orange (#FF8F00) - Keeping existing scale */
     --color-primary-50: 255 248 225;
-    /* #FFF8E1 */
     --color-primary-100: 255 236 179;
-    /* #FFECB3 */
     --color-primary-200: 255 224 130;
-    /* #FFE082 */
     --color-primary-300: 255 213 79;
-    /* #FFD54F */
     --color-primary-400: 255 202 40;
-    /* #FFCA28 */
     --color-primary-500: 255 160 0;
-    /* #FFA000 */
     --color-primary-600: 255 143 0;
-    /* #FF8F00 (Carrot Orange - MAIN) */
     --color-primary-700: 255 111 0;
-    /* #FF6F00 */
     --color-primary-800: 230 81 0;
-    /* #E65100 */
     --color-primary-900: 191 54 12;
-    /* #BF360C */
 
-    /* Medical/Secondary: Soft Yellow (#FFF3CD) scale */
+    /* Medical: Soft Yellow/Cream */
     --color-medical-50: 255 253 248;
-    /* #FFFDF8 (Cream White) */
+    /* Cream White */
     --color-medical-100: 255 243 205;
-    /* #FFF3CD (Soft Yellow) */
+    /* Soft Yellow */
     --color-medical-200: 255 236 179;
     --color-medical-300: 255 224 130;
     --color-medical-400: 255 213 79;
@@ -93,7 +97,7 @@
     --color-medical-800: 255 143 0;
     --color-medical-900: 255 111 0;
 
-    /* Accent: Olive Green (#7A9A01) scale */
+    /* Accent: Olive Green */
     --color-accent-50: 247 254 231;
     --color-accent-100: 236 252 203;
     --color-accent-200: 217 249 157;
@@ -101,7 +105,6 @@
     --color-accent-400: 163 230 53;
     --color-accent-500: 132 204 22;
     --color-accent-600: 122 154 1;
-    /* #7A9A01 (Olive Green) */
     --color-accent-700: 77 124 15;
     --color-accent-800: 63 98 18;
     --color-accent-900: 54 83 20;
@@ -113,47 +116,51 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
+    color: rgb(var(--color-medical-900));
+    /* Primary Text Color */
     @apply antialiased;
   }
 }
 
 @layer components {
+  /* Premium Button Styles */
 
-  /* Premium Button Styles - matching logo aesthetic */
+  /* Primary CTA: Coral (Accent) for that International Standard */
   .btn-primary {
-    @apply relative bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-600/40 transition-all duration-300 transform hover:-translate-y-0.5;
+    @apply relative bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-accent-600/40 transition-all duration-300 transform hover:-translate-y-0.5;
   }
 
+  /* Secondary Button: Sage (Primary) */
   .btn-secondary {
-    @apply relative bg-white hover:bg-gradient-to-r hover:from-medical-50 hover:to-white text-primary-600 font-semibold py-3 px-6 rounded-xl border-2 border-primary-600 hover:border-primary-700 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5;
+    @apply relative bg-white hover:bg-medical-50 text-primary-600 font-semibold py-3 px-8 rounded-xl border-2 border-primary-200 hover:border-primary-600 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5;
   }
 
   /* Premium Card Styles */
   .card {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 border border-gray-100/50 transition-all duration-300 transform hover:-translate-y-1;
+    @apply bg-white rounded-2xl shadow-[0_2px_20px_rgba(0, 0, 0, 0.04)] hover:shadow-[0_10px_30px_rgba(0, 0, 0, 0.08)] p-8 border border-medical-300/50 transition-all duration-300 transform hover:-translate-y-1;
   }
 
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    @apply py-20 px-4 sm:px-6 lg:px-8;
   }
 
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Logo-inspired gradient text */
+  /* Logo-inspired gradient text - Premium Sage Gradient */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-700 via-primary-600 to-primary-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-700 via-primary-500 to-primary-300;
   }
 
-  /* Decorative circle element echoing logo */
+  /* Decorative circle element */
   .logo-circle {
-    @apply rounded-full bg-gradient-to-br from-primary-100 to-primary-50 border-2 border-primary-200/50 shadow-inner shadow-primary-300/20;
+    @apply rounded-full bg-gradient-to-br from-primary-100 to-medical-50 border border-white shadow-lg shadow-primary-900/5;
   }
 
-  /* Icon container matching logo style */
+  /* Icon container */
   .icon-container {
-    @apply w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-50 to-medical-50 flex items-center justify-center text-primary-600 shadow-md shadow-primary-200/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-300/40 hover:scale-110;
+    @apply w-16 h-16 rounded-2xl bg-gradient-to-br from-medical-50 to-white border border-medical-200 flex items-center justify-center text-primary-600 shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary-300 hover:scale-105;
   }
 }
 
@@ -161,15 +168,15 @@
 
   /* Glassmorphism effect */
   .glass {
-    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+    @apply bg-white/90 backdrop-blur-md border border-white/40;
   }
 
   /* Premium shadow variations */
   .shadow-premium {
-    box-shadow: 0 10px 40px -10px rgb(var(--color-primary-600) / 0.2);
+    box-shadow: 0 10px 40px -10px rgba(31, 122, 104, 0.15);
   }
 
   .shadow-premium-lg {
-    box-shadow: 0 20px 60px -15px rgb(var(--color-primary-600) / 0.3);
+    box-shadow: 0 20px 60px -15px rgba(31, 122, 104, 0.2);
   }
 }

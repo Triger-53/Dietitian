@@ -33,7 +33,7 @@ const ThemeToggle = () => {
             title={`Switch to ${theme === 'fresh' ? 'Warm' : 'Fresh'} Theme`}
         >
             <div className="absolute -top-12 left-0 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                {theme === 'fresh' ? 'Try Warm Theme 🍊' : 'Try Fresh Theme 🥗'}
+                {theme === 'fresh' ? 'Try Warm Theme 🍊' : 'International Theme 🌍'}
             </div>
             <Palette className={`w-6 h-6 ${theme === 'fresh' ? 'text-green-600' : 'text-orange-500'}`} />
         </button>
