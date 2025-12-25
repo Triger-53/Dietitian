@@ -59,7 +59,7 @@
 
   /* Icon container matching logo style */
   .icon-container {
-    @apply w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-50 to-blue-50
+    @apply w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-50 to-medical-50
            flex items-center justify-center text-primary-600
            shadow-md shadow-primary-200/30
            transition-all duration-300 hover:shadow-lg hover:shadow-primary-300/40
@@ -75,10 +75,10 @@
 
   /* Premium shadow variations */
   .shadow-premium {
-    box-shadow: 0 10px 40px -10px rgba(79, 155, 238, 0.2);
+    box-shadow: 0 10px 40px -10px rgba(5, 150, 105, 0.2);
   }
 
   .shadow-premium-lg {
-    box-shadow: 0 20px 60px -15px rgba(79, 155, 238, 0.3);
+    box-shadow: 0 20px 60px -15px rgba(5, 150, 105, 0.3);
   }
 }

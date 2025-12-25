@@ -142,7 +142,7 @@ const Home = () => {
 									<div className="flex flex-col">
 										<h2 className="text-2xl font-black tracking-tighter leading-none">
 											<span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-primary-700 to-primary-600">
-												Dr. Mariya Udaipurwala
+												Dr. Mariya U.
 											</span>
 										</h2>
 										<div className="flex items-center space-x-2 mt-1">
