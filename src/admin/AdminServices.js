@@ -11,6 +11,7 @@ import {
 	Shield,
 	Syringe,
 	Activity,
+	Eye,
 	Clock,
 	PlusCircle,
 	Apple,
@@ -142,8 +143,8 @@ const AdminServices = () => {
 									<div
 										key={s.id || i}
 										className={`card transition-all duration-300 w-full ${isActive
-												? "border-2 border-primary-500 shadow-lg"
-												: "hover:shadow-xl hover:-translate-y-1"
+											? "border-2 border-primary-500 shadow-lg"
+											: "hover:shadow-xl hover:-translate-y-1"
 											}`}
 										onClick={() => startEdit(i)}>
 										<div className="flex items-start justify-between">

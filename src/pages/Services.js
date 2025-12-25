@@ -14,6 +14,11 @@ import {
 	Apple,
 	Scale,
 	Dumbbell,
+	Baby,
+	Star,
+	Calendar,
+	Clock,
+	Brain,
 } from "lucide-react"
 import { getAllServicesAsync } from "../data/services"
 
