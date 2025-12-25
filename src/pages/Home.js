@@ -281,7 +281,7 @@ const Home = () => {
 				</section>
 
 				{/* Why Choose Us */}
-				<section className="section-padding bg-gray-50">
+				<section className="section-padding bg-medical-50">
 					<div className="max-w-7xl mx-auto">
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 							<div>

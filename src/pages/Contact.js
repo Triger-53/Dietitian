@@ -86,7 +86,7 @@ const Contact = () => {
 				title="Contact Us - Dr. Mariya Udaipurwala"
 				description="Get in touch with Dr. Mariya Udaipurwala's nutritional office. Find our contact information, office hours, and send us a message through our contact form."
 			/>
-			<div className="min-h-screen bg-gray-50">
+			<div className="min-h-screen bg-medical-50">
 				{/* Hero Section */}
 				<section className="bg-gradient-to-br from-primary-50 to-blue-50 section-padding">
 					<div className="max-w-7xl mx-auto text-center">

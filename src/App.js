@@ -49,7 +49,7 @@ function AppContent() {
 	}, [location.pathname])
 
 	return (
-		<div className="min-h-screen bg-gray-50">
+		<div className="min-h-screen bg-medical-50">
 			{!isAdminRoute && <Navbar />}
 
 			<main>

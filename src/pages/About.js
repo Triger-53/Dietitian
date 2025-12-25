@@ -73,7 +73,7 @@ const About = () => {
 				title="About Dr. Mariya Udaipurwala"
 				description="Learn about Dr. Mariya Udaipurwala, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
 			/>
-			<div className="min-h-screen bg-gray-50">
+			<div className="min-h-screen bg-medical-50">
 				{/* Hero Section */}
 				<section className="bg-gradient-to-br from-primary-50 to-blue-50 section-padding">
 					<div className="max-w-7xl mx-auto">
@@ -227,7 +227,7 @@ const About = () => {
 				</section>
 
 				{/* Practice Philosophy */}
-				<section className="section-padding bg-gray-50">
+				<section className="section-padding bg-medical-50">
 					<div className="max-w-7xl mx-auto">
 						<div className="text-center mb-12">
 							<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -260,7 +260,7 @@ const About = () => {
 				</section>
 
 				{/* Office Information */}
-				<section className="section-padding bg-gray-50">
+				<section className="section-padding bg-medical-50">
 					<div className="max-w-7xl mx-auto">
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 							<motion.div

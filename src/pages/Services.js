@@ -122,7 +122,7 @@ const Services = () => {
 				title="Services - Dr. Mariya Udaipurwala"
 				description="Explore the comprehensive nutrition and diet services offered by Dr. Mariya Udaipurwala. We provide personalized plans for children, teens, adults, and seniors."
 			/>
-			<div className="min-h-screen bg-gray-50">
+			<div className="min-h-screen bg-medical-50">
 				{/* Hero Section */}
 				<section className="bg-gradient-to-br from-primary-50 to-blue-50 section-padding">
 					<div className="max-w-7xl mx-auto text-center">

@@ -980,7 +980,7 @@ const Appointment = () => {
 
 	// ----------------- Main render -----------------
 	return (
-		<div className="min-h-screen bg-gray-50">
+		<div className="min-h-screen bg-medical-50">
 			{!isSubmitted && (
 				<section className="bg-gradient-to-br from-primary-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
 					<div className="max-w-7xl mx-auto text-center">
