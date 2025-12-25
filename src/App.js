@@ -37,6 +37,7 @@ import AppointmentSlotManager from "./admin/AppointmentSlotManager"
 import AdminSessions from "./admin/AdminSessions"
 import AdminAIChat from "./admin/AdminAIChat"
 import ChatWidget from "./components/ChatWidget"
+import ThemeToggle from "./components/ThemeToggle"
 
 function AppContent() {
 	const location = useLocation()
@@ -218,6 +219,7 @@ function AppContent() {
 
 			{!isAdminRoute && <Footer />}
 			{!isAdminRoute && <ChatWidget />}
+			{!isAdminRoute && <ThemeToggle />}
 		</div>
 	)
 }
