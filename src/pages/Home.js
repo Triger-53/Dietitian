@@ -20,6 +20,10 @@ import {
 	Star,
 	ArrowRight,
 	CheckCircle,
+	Apple,
+	Scale,
+	Dumbbell,
+	Baby,
 } from "lucide-react"
 import { getAllServicesAsync } from "../data/services"
 import { getAllReviewsAsync } from "../data/reviews"
@@ -38,6 +42,10 @@ const Home = () => {
 			Syringe: Shield,
 			Activity: Activity,
 			Eye: Eye,
+			Apple: Apple,
+			Scale: Scale,
+			Dumbbell: Dumbbell,
+			Baby: Baby,
 		}
 
 		const fetchServices = async () => {

@@ -18,11 +18,11 @@ import {
 
 const About = () => {
 	const credentials = [
-		"Licensed Speech-Language Pathologist",
-		"Master's Degree in Speech-Language Pathology",
-		"Certified by American Speech-Language-Hearing Association",
+		"Registered Dietitian Nutritionist (RDN)",
+		"Master's Degree in Clinical Nutrition",
+		"Certified Diabetes Care and Education Specialist",
 		"25+ Years of Clinical Experience",
-		"Specialized in Pediatric and Adult Therapy"
+		"Specialized in Weight Management and Pediatric Nutrition"
 	];
 
 	const values = [
@@ -45,9 +45,9 @@ const About = () => {
 
 	const team = [
 		{
-			name: "Dr. Fatima Kasamnath, SLP",
-			role: "Speech-Language Pathologist",
-			education: "Master's in Speech-Language Pathology",
+			name: "Dr. Mama (Registered Dietitian)",
+			role: "Lead Nutritionist",
+			education: "Master's in Clinical Nutrition",
 			experience: "25+ Years",
 			image: "👩‍⚕️"
 		},
@@ -70,8 +70,8 @@ const About = () => {
 	return (
 		<>
 			<SEO
-				title="About Dr. Fatima Kasamnath"
-				description="Learn about Dr. Fatima Kasamnath, a dedicated speech-language pathologist with over 25 years of experience. Discover her story, philosophy, and commitment to patient care."
+				title="About Dr. Mama"
+				description="Learn about Dr. Mama, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}
@@ -83,11 +83,11 @@ const About = () => {
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.8 }}>
 								<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-									Meet Dr. Fatima Kasamnath
+									Meet Dr. Mama
 								</h1>
 								<p className="text-xl text-gray-600 mb-8">
-									A dedicated speech-language pathologist with over 15 years of
-									experience providing compassionate, comprehensive speech therapy
+									A dedicated registered dietitian with over 25 years of
+									experience providing compassionate, comprehensive nutrition counseling
 									to patients of all ages.
 								</p>
 								<div className="flex flex-col sm:flex-row gap-4">
@@ -116,10 +116,10 @@ const About = () => {
 											👩‍⚕️
 										</div>
 										<h3 className="text-2xl font-semibold text-gray-900 mb-2">
-											Dr. Fatima Kasamnath, SLP
+											Dr. Mama (RDN)
 										</h3>
 										<p className="text-gray-600 mb-4">
-											Speech-Language Pathologist
+											Registered Dietitian Nutritionist
 										</p>
 										<div className="space-y-3 text-left">
 											<div className="flex items-center">
@@ -191,24 +191,21 @@ const About = () => {
 								className="lg:col-span-3">
 								<div className="space-y-6 text-lg text-gray-700">
 									<p className="text-2xl font-semibold text-gray-900 leading-snug">
-										"My passion is helping individuals find their voice and
-										communicate with confidence."
+										"My passion is helping individuals transform their health
+										through the power of nutrition."
 									</p>
 									<p>
-										From a young age, I was fascinated by the power of
-										communication. This led me to pursue a Master's degree in
-										Speech-Language Pathology and become certified by the American
-										Speech-Language-Hearing Association. For over two decades,
+										From a young age, I was fascinated by the science of
+										nutrition and its impact on life. This led me to pursue a Master's degree in
+										Clinical Nutrition and become a Registered Dietitian Nutritionist. For over two decades,
 										I've dedicated my career to helping patients of all ages
-										overcome communication challenges.
+										reach their health goals.
 									</p>
 									<p>
-										I believe that effective therapy is built on a foundation of
-										trust, empathy, and evidence-based practices. Whether working
-										with a child learning their first words or an adult recovering
-										from a neurological event, I am committed to providing
-										personalized care that empowers each patient to reach their
-										full potential.
+										I believe that sustainable health is built on a foundation of
+										balanced nutrition, mindful eating, and evidence-based practices. Whether working
+										with a family on healthy eating habits or an athlete optimizing performance,
+										I am committed to providing personalized guidance that empowers each person to feel their best.
 									</p>
 								</div>
 								<div className="mt-8 pt-6 border-t border-gray-200">
@@ -296,7 +293,7 @@ const About = () => {
 									</div>
 									<div className="flex items-center">
 										<Mail className="w-6 h-6 text-primary-600 mr-3" />
-										<span className="text-gray-700">info@drfatimakasamnath.com</span>
+										<span className="text-gray-700">info@drmama-nutrition.com</span>
 									</div>
 									<div className="flex items-center">
 										<Calendar className="w-6 h-6 text-primary-600 mr-3" />
@@ -321,7 +318,7 @@ const About = () => {
 									<div className="flex items-center">
 										<Star className="w-5 h-5 text-yellow-400 fill-current mr-3" />
 										<span className="text-gray-700">
-											Licensed speech-language pathologist
+											Registered and certified dietitian
 										</span>
 									</div>
 									<div className="flex items-center">
@@ -338,13 +335,11 @@ const About = () => {
 									</div>
 									<div className="flex items-center">
 										<Star className="w-5 h-5 text-yellow-400 fill-current mr-3" />
-										<span className="text-gray-700">
-											Therapy for all age groups
-										</span>
+										<span className="text-gray-700">Nutritional therapy for all ages</span>
 									</div>
 									<div className="flex items-center">
 										<Star className="w-5 h-5 text-yellow-400 fill-current mr-3" />
-										<span className="text-gray-700">Telepractice available</span>
+										<span className="text-gray-700">Online consultation available</span>
 									</div>
 								</div>
 							</motion.div>
@@ -357,11 +352,11 @@ const About = () => {
 					<CtaIllustration />
 					<div className="max-w-4xl mx-auto text-center relative z-10">
 						<h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-							Ready to Meet Dr. Kasamnath?
+							Ready to Meet Dr. Mama?
 						</h2>
 						<p className="text-xl text-primary-100 mb-8">
-							Schedule your first appointment and experience the difference that
-							compassionate, comprehensive care can make in your health journey.
+							Schedule your first consultation and experience the difference that
+							personalized nutrition guidance can make in your wellness journey.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Link

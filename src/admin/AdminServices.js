@@ -11,9 +11,12 @@ import {
 	Shield,
 	Syringe,
 	Activity,
-	Eye,
 	Clock,
 	PlusCircle,
+	Apple,
+	Scale,
+	Dumbbell,
+	Baby,
 } from "lucide-react"
 
 const emptyService = {
@@ -117,7 +120,7 @@ const AdminServices = () => {
 		}
 	}
 
-	const iconMap = { Heart, Stethoscope, Shield, Syringe, Activity, Eye }
+	const iconMap = { Heart, Stethoscope, Shield, Syringe, Activity, Eye, Apple, Scale, Dumbbell, Baby }
 
 	return (
 		<div className="p-6 bg-gray-50 min-h-full">
@@ -138,11 +141,10 @@ const AdminServices = () => {
 								return (
 									<div
 										key={s.id || i}
-										className={`card transition-all duration-300 w-full ${
-											isActive
+										className={`card transition-all duration-300 w-full ${isActive
 												? "border-2 border-primary-500 shadow-lg"
 												: "hover:shadow-xl hover:-translate-y-1"
-										}`}
+											}`}
 										onClick={() => startEdit(i)}>
 										<div className="flex items-start justify-between">
 											<div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 mb-4">
