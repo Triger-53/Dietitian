@@ -18,7 +18,7 @@ const RazorpayButton = ({ amount, formData, onPaymentSuccess, selectedService })
 			key: "rzp_test_RuDFkTYjCnE1e4",
 			amount: paymentAmount * 100, // Convert to paise
 			currency: "INR",
-			name: "Dr. Fatima Kasamnath Clinic",
+			name: "Mariya Udaipurwala Nutrition Clinic",
 			description: `Appointment Payment - ${selectedService?.title || "Service"
 				}`,
 			prefill: {

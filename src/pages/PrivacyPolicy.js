@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
 								1. Introduction
 							</h2>
 							<p>
-								Welcome to Dr. Fatima Kasamnath's Medical Practice (“we,”
+								Welcome to Mariya Udaipurwala Nutrition Practice (“we,”
 								“our,” or “us”). We are committed to protecting your privacy
 								and ensuring the security of your personal and medical
 								information. This Privacy Policy explains how we collect, use,
@@ -206,9 +206,9 @@ const PrivacyPolicy = () => {
 							<p className="mt-4">
 								To exercise these rights, contact us at{" "}
 								<a
-									href="mailto:info@drfatimakasamnath.com"
+									href="mailto:info@mariya-nutrition.com"
 									className="text-primary-600 hover:underline">
-									info@drfatimakasamnath.com
+									info@mariya-nutrition.com
 								</a>
 								.
 							</p>
@@ -273,13 +273,13 @@ const PrivacyPolicy = () => {
 								<li>
 									📧{" "}
 									<a
-										href="mailto:info@drfatimakasamnath.com"
+										href="mailto:info@mariya-nutrition.com"
 										className="text-primary-600 hover:underline">
-										info@drfatimakasamnath.com
+										info@mariya-nutrition.com
 									</a>
 								</li>
 								<li>
-									🏢 Dr. Fatima Kasamnath Medical Practice, 123 Medical
+									🏢 Mariya Udaipurwala Nutrition Practice, 123 Medical
 									Center Dr, Suite 100, New York, NY 10001
 								</li>
 							</ul>

@@ -787,7 +787,7 @@ const Appointment = () => {
 				key: "rzp_test_RuDFkTYjCnE1e4",
 				amount: orderData.amount,
 				currency: orderData.currency,
-				name: "Dr. Fatima Kasamnath Clinic",
+				name: "Mariya Udaipurwala Nutrition Clinic",
 				description: `Appointment Payment - ${selectedService?.title || formData.appointmentType
 					}`,
 				order_id: orderData.id,
@@ -992,7 +992,7 @@ const Appointment = () => {
 								Book Your Appointment
 							</h1>
 							<p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-								Schedule your visit with Dr. Fatima Kasamnath. Our online booking
+								Schedule your visit with Mariya Udaipurwala. Our online booking
 								system makes it easy to find a time that works for you.
 							</p>
 						</motion.div>

@@ -45,7 +45,7 @@ const About = () => {
 
 	const team = [
 		{
-			name: "Dr. Mama (Registered Dietitian)",
+			name: "Mariya Udaipurwala (Registered Dietitian)",
 			role: "Lead Nutritionist",
 			education: "Master's in Clinical Nutrition",
 			experience: "25+ Years",
@@ -70,8 +70,8 @@ const About = () => {
 	return (
 		<>
 			<SEO
-				title="About Dr. Mama"
-				description="Learn about Dr. Mama, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
+				title="About Mariya Udaipurwala"
+				description="Learn about Mariya Udaipurwala, a dedicated registered dietitian with over 25 years of experience. Discover her story, philosophy, and commitment to nutritional wellness."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}
@@ -83,7 +83,7 @@ const About = () => {
 								animate={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.8 }}>
 								<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-									Meet Dr. Mama
+									Meet Mariya Udaipurwala
 								</h1>
 								<p className="text-xl text-gray-600 mb-8">
 									A dedicated registered dietitian with over 25 years of
@@ -116,7 +116,7 @@ const About = () => {
 											👩‍⚕️
 										</div>
 										<h3 className="text-2xl font-semibold text-gray-900 mb-2">
-											Dr. Mama (RDN)
+											Mariya Udaipurwala (RDN)
 										</h3>
 										<p className="text-gray-600 mb-4">
 											Registered Dietitian Nutritionist
@@ -293,7 +293,7 @@ const About = () => {
 									</div>
 									<div className="flex items-center">
 										<Mail className="w-6 h-6 text-primary-600 mr-3" />
-										<span className="text-gray-700">info@drmama-nutrition.com</span>
+										<span className="text-gray-700">info@mariya-nutrition.com</span>
 									</div>
 									<div className="flex items-center">
 										<Calendar className="w-6 h-6 text-primary-600 mr-3" />
@@ -330,7 +330,7 @@ const About = () => {
 									<div className="flex items-center">
 										<Star className="w-5 h-5 text-yellow-400 fill-current mr-3" />
 										<span className="text-gray-700">
-											Child-friendly therapy environment
+											Supportive health environment
 										</span>
 									</div>
 									<div className="flex items-center">
@@ -352,7 +352,7 @@ const About = () => {
 					<CtaIllustration />
 					<div className="max-w-4xl mx-auto text-center relative z-10">
 						<h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-							Ready to Meet Dr. Mama?
+							Ready to Meet Mariya Udaipurwala?
 						</h2>
 						<p className="text-xl text-primary-100 mb-8">
 							Schedule your first consultation and experience the difference that

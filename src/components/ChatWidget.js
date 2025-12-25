@@ -12,7 +12,7 @@ const ChatWidget = () => {
     const [messages, setMessages] = useState([
         {
             role: "model",
-            text: "Hello! I'm an AI assistant for Dr. Fatima Kasamnath. How can I help you today?",
+            text: "Hello! I'm an AI assistant for Mariya Udaipurwala. How can I help you today?",
         },
     ])
     const [inputText, setInputText] = useState("")
@@ -118,7 +118,7 @@ const ChatWidget = () => {
                     <div className="bg-primary-600 p-4 flex justify-between items-center text-white">
                         <div className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                            <h3 className="font-semibold">Dr. Fatima's Assistant</h3>
+                            <h3 className="font-semibold">Mariya's Assistant</h3>
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}

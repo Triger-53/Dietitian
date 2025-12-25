@@ -12,7 +12,7 @@ const AdminLogin = () => {
 		setError("")
 
 		// Hardcoded credentials
-		const adminEmail = "fatima"
+		const adminEmail = "mariya"
 		const adminPassword = "fk525351"
 
 		if (email === adminEmail && password === adminPassword) {

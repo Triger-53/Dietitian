@@ -58,9 +58,9 @@ const Contact = () => {
 			icon: <Mail className="w-6 h-6" />,
 			title: "Email",
 			details: [
-				"info@drmama-nutrition.com",
+				"info@mariya-nutrition.com",
 			],
-			action: "mailto:info@drmama-nutrition.com",
+			action: "mailto:info@mariya-nutrition.com",
 		},
 		{
 			icon: <MapPin className="w-6 h-6" />,
@@ -83,8 +83,8 @@ const Contact = () => {
 	return (
 		<>
 			<SEO
-				title="Contact Us - Dr. Mama"
-				description="Get in touch with Dr. Mama's nutritional office. Find our contact information, office hours, and send us a message through our contact form."
+				title="Contact Us - Mariya Udaipurwala"
+				description="Get in touch with Mariya Udaipurwala's nutritional office. Find our contact information, office hours, and send us a message through our contact form."
 			/>
 			<div className="min-h-screen bg-gray-50">
 				{/* Hero Section */}
@@ -365,7 +365,7 @@ const Contact = () => {
 										<div className="flex items-center">
 											<Mail className="w-5 h-5 text-primary-600 mr-3" />
 											<span className="text-gray-700">
-												info@drmama-nutrition.com
+												info@mariya-nutrition.com
 											</span>
 										</div>
 										<div className="flex items-center">
