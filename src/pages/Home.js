@@ -22,7 +22,8 @@ import {
 	Baby,
 	Leaf,
 	Briefcase,
-	Clock
+	Clock,
+	Users
 } from "lucide-react"
 import { getAllServicesAsync } from "../data/services"
 import { getAllReviewsAsync } from "../data/reviews"
