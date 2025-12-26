@@ -21,7 +21,7 @@ const Footer = () => {
 							<div className="relative">
 								<img
 									src="/logo.png"
-									alt="Mariya U."
+									alt="NutriEd Logo"
 									className="h-12 w-12 object-contain rounded-full shadow-lg shadow-black/20 group-hover:shadow-black/30 transition-shadow duration-300 bg-white"
 								/>
 							</div>

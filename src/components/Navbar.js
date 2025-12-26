@@ -54,10 +54,10 @@ const Navbar = () => {
 						<div className="relative">
 							<img
 								src="/logo.png"
-								alt="Dr. Fatima K."
-								className="h-11 w-11 object-contain rounded-full shadow-lg shadow-primary-500/20 group-hover:shadow-primary-600/30 transition-shadow duration-300"
+								alt="NutriEd Logo"
+								className="h-12 w-12 object-contain rounded-full transition-shadow duration-300"
 							/>
-							<div className="absolute inset-0 rounded-full border border-white/20 pointer-events-none"></div>
+							<div className="absolute inset-0 rounded-full border border-primary-100/20 pointer-events-none"></div>
 						</div>
 						<div className="flex flex-col">
 							<h1 className="text-2xl font-black tracking-tighter leading-none">
