@@ -4,76 +4,93 @@
 
 @layer base {
   :root {
-    /* 🌿 Modern Wellness Theme (Teal & Lemon) */
+    /* 🌞 Natural Food Aesthetic (Strict User Palette) */
 
-    /* Primary: Ocean Teal (Professional, Clean, Calming) */
-    /* Replaces: Sage/Lime (Flag Green) */
-    --color-primary-50: 240 253 250;
-    /* #f0fdfa */
-    --color-primary-100: 204 251 241;
-    /* #ccfbf1 */
-    --color-primary-200: 153 246 228;
-    /* #99f6e4 */
-    --color-primary-300: 94 234 212;
-    /* #5eead4 */
-    --color-primary-400: 45 212 191;
-    /* #2dd4bf */
-    --color-primary-500: 20 184 166;
-    /* #14b8a6 (Teal 500) - Main Brand */
-    --color-primary-600: 13 148 136;
-    /* #0d9488 (Teal 600) */
-    --color-primary-700: 15 118 110;
-    /* #0f766e (Teal 700) */
-    --color-primary-800: 17 94 89;
-    /* #115e59 */
-    --color-primary-900: 19 78 74;
-    /* #134e4a */
+    /* CORE BRAND COLORS */
+    --color-green-soft: 127 183 126;
+    /* #7FB77E (Fresh Leaf Green) */
+    --color-green-hover: 95 158 110;
+    /* #5F9E6E (Deep Leaf) */
 
-    /* Medical/Neutral: Clean Slate (Modern & Airy) */
-    /* Replaces: Warm Cream (Flag White/Saffron hue) */
-    --color-medical-50: 255 255 255;
-    /* Pure White */
-    --color-medical-100: 248 250 252;
-    /* Slate 50 */
-    --color-medical-200: 241 245 249;
-    /* Slate 100 */
-    --color-medical-300: 226 232 240;
-    /* Slate 200 - Borders */
-    --color-medical-400: 203 213 225;
-    /* Slate 300 */
-    --color-medical-500: 148 163 184;
-    /* Slate 400 */
-    --color-medical-600: 100 116 139;
-    /* Slate 500 */
-    --color-medical-700: 71 85 105;
-    /* Slate 600 - Muted Text */
-    --color-medical-800: 51 65 85;
-    /* Slate 700 - Secondary Text */
-    --color-medical-900: 15 23 42;
-    /* Slate 900 - Primary Text */
+    --color-yellow-soft: 255 183 3;
+    /* #FFB703 (Soft Mango Orange) - Primary CTA */
+    --color-orange-light: 255 214 165;
+    /* #FFD6A5 (Light Apricot) */
 
-    /* Accent: Zesty Lemon (Energy, Happiness, Request Fulfillment) */
-    /* Replaces: Orange (Flag Saffron) */
-    --color-accent-50: 255 251 235;
-    /* Amber 50 */
-    --color-accent-100: 254 243 199;
-    /* Amber 100 */
-    --color-accent-200: 253 230 138;
-    /* Amber 200 */
-    --color-accent-300: 252 211 77;
-    /* Amber 300 */
-    --color-accent-400: 250 204 21;
-    /* Yellow 400 */
-    --color-accent-500: 234 179 8;
-    /* Yellow 500 - MAIN ACCENT */
-    --color-accent-600: 202 138 4;
-    /* Yellow 600 */
-    --color-accent-700: 161 98 7;
-    /* Yellow 700 */
-    --color-accent-800: 133 77 14;
-    /* Yellow 800 */
-    --color-accent-900: 113 63 18;
-    /* Yellow 900 */
+    /* BACKGROUND SYSTEM (Sunlight Feel) */
+    --color-bg-main: 255 248 231;
+    /* #FFF8E7 (Main Background) */
+    --color-bg-section: 255 241 214;
+    /* #FFF1D6 (Section Background) */
+    --color-bg-card: 255 255 255;
+    /* #FFFFFF (Card Background) */
+    --color-bg-soft: 234 244 227;
+    /* #EAF4E3 (Soft Highlight) */
+    --color-bg-footer: 79 111 82;
+    /* #4F6F52 (Deep Forest) */
+
+    /* TYPOGRAPHY (Warm & Natural) */
+    --color-text-main: 58 58 58;
+    /* #3A3A3A (Primary Text) */
+    --color-text-secondary: 107 107 107;
+    /* #6B6B6B (Secondary Text) */
+    --color-text-muted: 154 154 154;
+    /* #9A9A9A (Muted Text) */
+
+    /* STATUS */
+    --color-error-soft: 224 122 95;
+    /* #E07A5F */
+
+    /* Map to Tailwind Scale Names for Compatibility */
+    /* Primary = Green Scale */
+    --color-primary-50: 234 244 227;
+    /* #EAF4E3 */
+    --color-primary-100: 210 230 200;
+    --color-primary-200: 180 215 170;
+    --color-primary-300: 150 200 150;
+    --color-primary-400: 140 190 140;
+    --color-primary-500: 127 183 126;
+    /* #7FB77E (MAIN) */
+    --color-primary-600: 95 158 110;
+    /* #5F9E6E (Hover) */
+    --color-primary-700: 79 111 82;
+    /* #4F6F52 (Darkest) */
+    --color-primary-800: 60 90 60;
+    --color-primary-900: 40 70 40;
+
+    /* Medical/Neutral = Background Scale */
+    --color-medical-50: 255 248 231;
+    /* #FFF8E7 (Main BG) */
+    --color-medical-100: 255 241 214;
+    /* #FFF1D6 (Section BG) */
+    --color-medical-200: 239 230 216;
+    /* #EFE6D8 (Border) */
+    --color-medical-300: 229 220 203;
+    /* #E5DCCB (Input Border) */
+    --color-medical-400: 200 200 200;
+    --color-medical-500: 154 154 154;
+    /* #9A9A9A */
+    --color-medical-600: 107 107 107;
+    /* #6B6B6B */
+    --color-medical-700: 80 80 80;
+    --color-medical-800: 58 58 58;
+    /* #3A3A3A (Main Text) */
+    --color-medical-900: 20 20 20;
+
+    /* Accent = Mango & Apricot */
+    --color-accent-50: 255 250 240;
+    --color-accent-100: 255 235 220;
+    --color-accent-200: 255 214 165;
+    /* #FFD6A5 (Apricot) */
+    --color-accent-300: 255 200 100;
+    --color-accent-400: 255 190 50;
+    --color-accent-500: 255 183 3;
+    /* #FFB703 (Mango - MAIN) */
+    --color-accent-600: 244 169 0;
+    /* #F4A900 (Hover) */
+    --color-accent-700: 200 140 0;
+    --color-accent-800: 160 110 0;
+    --color-accent-900: 120 80 0;
   }
 
   html {
@@ -82,37 +99,43 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    color: rgb(var(--color-medical-900));
+    color: rgb(var(--color-medical-800));
+    /* #3A3A3A */
     background-color: rgb(var(--color-medical-50));
-    /* Modern, clean gradient - Very subtle */
-    background-image:
-      radial-gradient(circle at 10% 20%, rgb(var(--color-primary-50) / 0.8) 0%, transparent 40%),
-      radial-gradient(circle at 90% 80%, rgb(var(--color-accent-50) / 0.8) 0%, transparent 40%);
+    /* #FFF8E7 */
+    /* Organic Gradient (Sunlight feel) */
+    background-image: linear-gradient(135deg, #FFF1D6 0%, #FFF8E7 50%, #EAF4E3 100%);
     @apply antialiased;
   }
 }
 
 @layer components {
-  /* Modern "App-Like" Button Styles */
 
-  /* Primary CTA: Teal Gradient (Professional) check! */
+  /* 🌼 Primary CTA (Booking / Order) - MANGO */
   .btn-primary {
-    @apply relative bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-bold py-3 px-8 rounded-2xl shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-600/40 transition-all duration-300 transform hover:-translate-y-0.5 border border-transparent;
+    @apply relative bg-accent-500 hover:bg-accent-600 text-medical-800 font-bold py-3 px-8 transition-all duration-300 transform hover:-translate-y-0.5 border border-transparent;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(255, 183, 3, 0.25);
   }
 
-  /* Secondary Button: Clean White with Teal Border */
+  /* 🍃 Secondary Button - FRESH LEAF */
   .btn-secondary {
-    @apply relative bg-white hover:bg-primary-50 text-primary-700 font-semibold py-3 px-8 rounded-2xl border-2 border-primary-100 hover:border-primary-500 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5;
+    @apply relative bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 px-8 transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm;
+    border-radius: 14px;
   }
 
-  /* Highlight/Special Button: Zesty Lemon */
-  .btn-accent {
-    @apply relative bg-gradient-to-r from-accent-400 to-accent-500 hover:from-accent-500 hover:to-accent-600 text-white font-bold py-3 px-8 rounded-2xl shadow-lg shadow-accent-400/30 hover:shadow-xl hover:shadow-accent-500/40 transition-all duration-300 transform hover:-translate-y-0.5;
+  /* 🌱 Outline Button */
+  .btn-outline {
+    @apply bg-transparent border-2 border-primary-500 text-primary-600 hover:bg-primary-50 font-semibold py-3 px-8 transition-all duration-300;
+    border-radius: 14px;
   }
 
-  /* Modern Card Styles - Float & Clean */
+  /* 📦 Cards */
   .card {
-    @apply bg-white rounded-3xl shadow-lg hover:shadow-xl p-8 border border-medical-100 transition-all duration-300 transform hover:-translate-y-1 hover:border-primary-100;
+    @apply bg-white p-8 transition-all duration-300 transform hover:-translate-y-1;
+    border-radius: 16px;
+    border: 1px solid #EFE6D8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   }
 
   .section-padding {
@@ -123,37 +146,42 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Modern Gradient Text */
+  /* Footer specific override if needed */
+  .footer-bg {
+    background-color: #4F6F52;
+    /* Deep Forest */
+    color: white;
+  }
+
+  /* Modern Gradient Text - Soft & Natural */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-500;
   }
 
-  /* Decorative circle element */
-  .logo-circle {
-    @apply rounded-full bg-gradient-to-br from-primary-50 to-white border-4 border-white shadow-xl shadow-primary-900/5;
-  }
-
-  /* Icon container - Modern Squircle */
-  .icon-container {
-    @apply w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-50 to-white border border-primary-100 flex items-center justify-center text-primary-600 shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary-300 hover:scale-105;
+  /* Inputs */
+  .input-natural {
+    @apply border border-medical-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none p-3 bg-white;
   }
 }
 
 @layer utilities {
-
-  /* Glassmorphism effect - Cool & Clean */
-  .glass {
-    @apply bg-white/70 backdrop-blur-xl border border-white/50 shadow-sm;
+  .text-natural-dark {
+    color: #3A3A3A;
   }
 
-  /* Modern Blur Shadows */
-  .shadow-premium {
-    box-shadow: 0 20px 40px -10px rgba(13, 148, 136, 0.1);
-    /* Teal Shadow */
+  .text-natural-gray {
+    color: #6B6B6B;
   }
 
-  .shadow-premium-lg {
-    box-shadow: 0 30px 60px -15px rgba(20, 184, 166, 0.15);
-    /* Teal Shadow */
+  .text-natural-muted {
+    color: #9A9A9A;
+  }
+
+  .bg-natural-cream {
+    background-color: #FFF8E7;
+  }
+
+  .bg-natural-section {
+    background-color: #FFF1D6;
   }
 }
