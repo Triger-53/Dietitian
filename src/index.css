@@ -103,9 +103,22 @@
     /* #3A3A3A */
     background-color: rgb(var(--color-medical-50));
     /* #FFF8E7 */
-    /* Organic Gradient (Sunlight feel) */
-    background-image: linear-gradient(135deg, #FFF1D6 0%, #FFF8E7 50%, #EAF4E3 100%);
+    /* Organic Gradient (Sunlight feel) - Refined for Premium softness */
+    background-image: linear-gradient(135deg, #FFF1D6 0%, #FFF8E7 50%, #f7fee7 100%);
+    background-attachment: fixed;
+    /* Parallax feel */
     @apply antialiased;
+  }
+
+  /* Modern Typography Handling */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+    /* Modern text wrapping */
   }
 }
 
@@ -113,40 +126,64 @@
 
   /* 🌼 Primary CTA (Booking / Order) - MANGO */
   .btn-primary {
-    @apply relative bg-accent-500 hover:bg-accent-600 text-medical-800 font-bold py-3 px-8 transition-all duration-300 transform hover:-translate-y-0.5 border border-transparent;
-    border-radius: 14px;
-    box-shadow: 0 4px 15px rgba(255, 183, 3, 0.25);
+    @apply relative bg-accent-500 text-medical-800 font-bold py-3 px-8 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg border border-transparent overflow-hidden;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+    border-radius: 9999px;
+    /* Pill shape for premium feel */
+    box-shadow: 0 4px 15px rgba(255, 183, 3, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-accent-600);
+    box-shadow: 0 8px 25px rgba(255, 183, 3, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
   /* 🍃 Secondary Button - FRESH LEAF */
   .btn-secondary {
-    @apply relative bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 px-8 transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm;
-    border-radius: 14px;
+    @apply relative bg-primary-500 text-white font-semibold py-3 px-8 transition-all duration-300 transform hover:-translate-y-1 shadow-md;
+    border-radius: 9999px;
+    /* Pill shape */
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    box-shadow: 0 4px 15px rgba(127, 183, 126, 0.3);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-primary-600);
+    box-shadow: 0 8px 25px rgba(127, 183, 126, 0.4);
   }
 
   /* 🌱 Outline Button */
   .btn-outline {
     @apply bg-transparent border-2 border-primary-500 text-primary-600 hover:bg-primary-50 font-semibold py-3 px-8 transition-all duration-300;
-    border-radius: 14px;
+    border-radius: 9999px;
   }
 
-  /* 📦 Cards */
+  /* 📦 Cards - Premium Glassy/Clean */
   .card {
-    @apply bg-white p-8 transition-all duration-300 transform hover:-translate-y-1;
-    border-radius: 16px;
-    border: 1px solid #EFE6D8;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    @apply bg-white p-8 transition-all duration-500 transform hover:-translate-y-2;
+    border-radius: 24px;
+    /* More rounded */
+    border: 1px solid rgba(239, 230, 216, 0.6);
+    /* Cheaper border */
+    box-shadow: 0 10px 40px -10px rgba(79, 111, 82, 0.08);
+    /* Soft organic shadow */
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 50px -12px rgba(79, 111, 82, 0.15);
+    border-color: var(--color-primary-200);
   }
 
   .section-padding {
-    @apply py-20 px-4 sm:px-6 lg:px-8;
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+    /* More whitespace */
   }
 
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Footer specific override if needed */
+  /* Footer specific override */
   .footer-bg {
     background-color: #4F6F52;
     /* Deep Forest */
@@ -155,12 +192,20 @@
 
   /* Modern Gradient Text - Soft & Natural */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600;
   }
 
   /* Inputs */
   .input-natural {
-    @apply border border-medical-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none p-3 bg-white;
+    @apply border border-medical-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none p-4 bg-white shadow-sm transition-all;
+  }
+
+  /* Glassmorphism helpers */
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -183,5 +228,9 @@
 
   .bg-natural-section {
     background-color: #FFF1D6;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }
