@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Briefcase, Phone, Calendar, User, LogOut } from "lucide-react";
 import { useAuth } from "../auth/AuthProvider";
 import { Transition } from "@headlessui/react";
+import Logo from "./Logo";
 
 const NavLink = ({ to, children, isActive, onClick }) => (
 	<Link
@@ -50,19 +51,12 @@ const Navbar = () => {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center h-16">
 					{/* Logo */}
-					<Link to="/" className="flex items-center space-x-3 group transition-transform duration-300 hover:scale-[1.02]">
-						<div className="relative">
-							<img
-								src="/logo.png"
-								alt="NutriEd Logo"
-								className="h-12 w-12 object-contain rounded-full transition-shadow duration-300"
-							/>
-							<div className="absolute inset-0 rounded-full border border-primary-100/20 pointer-events-none"></div>
-						</div>
+					<Link to="/" className="flex items-center space-x-4 group transition-transform duration-300 hover:scale-[1.02]">
+						<Logo className="h-12 w-12" />
 						<div className="flex flex-col">
 							<h1 className="text-2xl font-black tracking-tighter leading-none">
-								<span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-primary-700 to-primary-600">
-									Dr. Mariya U.
+								<span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-700">
+									Dr. Mariya Udaipurwala
 								</span>
 							</h1>
 							<div className="flex items-center space-x-2 mt-1">

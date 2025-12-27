@@ -50,7 +50,7 @@ export default function UpdatePassword() {
 					<button
 						type="submit"
 						disabled={loading}
-						className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors disabled:opacity-50">
+						className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full transition-colors disabled:opacity-50">
 						{loading ? "Saving..." : "Save new password"}
 					</button>
 				</form>

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import Logo from "./Logo";
 import {
 	Phone,
 	Mail,
@@ -9,28 +10,24 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="footer-bg relative overflow-hidden">
+		<footer className=" bg-primary-400 relative overflow-hidden">
 			{/* Soft overlay pattern */}
-			<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none"></div>
+			<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-50 pointer-events-none"></div>
 
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 					{/* Practice Info */}
 					<div>
-						<Link to="/" className="flex items-center space-x-3 group transition-transform duration-300 hover:scale-[1.02] mb-8">
-							<div className="relative">
-								<img
-									src="/logo.png"
-									alt="NutriEd Logo"
-									className="h-12 w-12 object-contain rounded-full shadow-lg shadow-black/20 group-hover:shadow-black/30 transition-shadow duration-300 bg-white"
-								/>
-							</div>
+						<Link to="/" className="flex items-center space-x-4 group transition-transform duration-300 hover:scale-[1.02] mb-8">
+							<Logo className="h-12 w-12" />
 							<div className="flex flex-col">
-								<h1 className="text-2xl font-black tracking-tighter leading-none text-white">
-									Dr. Mariya <span className="text-primary-200">U.</span>
+								<h1 className="text-2xl font-black tracking-tighter leading-none text-white drop-shadow-md">
+									<span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-700">
+										Dr. Mariya U.
+									</span>
 								</h1>
 								<div className="flex items-center space-x-2 mt-1">
-									<span className="h-[1px] w-4 bg-primary-300"></span>
+									<span className="h-[1px] w-4 bg-accent-400"></span>
 									<span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary-100 leading-none">
 										Diet & Nutrition
 									</span>
@@ -101,9 +98,9 @@ const Footer = () => {
 
 				{/* Bottom Bar */}
 				<div className="border-t border-primary-800/50 mt-12 pt-8">
-					<div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-200/60">
+					<div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-20/60">
 						<p>
-							© 2025 Dr. Mariya Udaipurwala Nutrition Practice. All rights reserved.
+							© 2025 NutriEd Nutrition Practice. All rights reserved.
 						</p>
 						<div className="flex space-x-6 mt-4 md:mt-0">
 							<Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
@@ -111,8 +108,8 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</div >
+		</footer >
 	)
 }
 

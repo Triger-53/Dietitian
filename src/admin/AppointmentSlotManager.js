@@ -389,7 +389,7 @@ const AppointmentSlotManager = () => {
 									{day}
 								</div>
 								<div className="text-xs text-gray-500">
-									{schedule ? `${schedule.slots.length} slots` : "Closed"}
+									{schedule?.slots ? `${schedule.slots.length} slots` : "Closed"}
 								</div>
 							</div>
 						))}
@@ -416,7 +416,7 @@ const AppointmentSlotManager = () => {
 									{day}
 								</div>
 								<div className="text-xs text-gray-500">
-									{schedule ? `${schedule.slots.length} slots` : "Closed"}
+									{schedule?.slots ? `${schedule.slots.length} slots` : "Closed"}
 								</div>
 							</div>
 						))}
@@ -458,7 +458,7 @@ const AppointmentSlotManager = () => {
 													{day}
 												</div>
 												<div className="text-xs text-gray-500">
-													{schedule
+													{schedule?.slots
 														? `${schedule.slots.length} slots`
 														: "Closed"}
 												</div>
@@ -631,17 +631,29 @@ const ScheduleAudit = ({ onClose, onRefresh }) => {
 			let result;
 			if (cat.type === 'online') {
 				const newSlots = { ...slotManager.onlineSlots };
-				newSlots[day].slots = newSlots[day].slots.filter(s => s !== time);
-				result = await slotManager.setOnlineSlots(newSlots);
+				if (newSlots[day]?.slots) {
+					newSlots[day].slots = newSlots[day].slots.filter(s => s !== time);
+					result = await slotManager.setOnlineSlots(newSlots);
+				} else {
+					result = { success: true }; // No slots to remove
+				}
 			} else if (cat.type === 'session') {
 				const newSlots = { ...slotManager.sessionSlots };
-				newSlots[day].slots = newSlots[day].slots.filter(s => s !== time);
-				result = await slotManager.setSessionSlots(newSlots);
+				if (newSlots[day]?.slots) {
+					newSlots[day].slots = newSlots[day].slots.filter(s => s !== time);
+					result = await slotManager.setSessionSlots(newSlots);
+				} else {
+					result = { success: true };
+				}
 			} else if (cat.type === 'offline') {
 				const center = slotManager.medicalCenters.find(c => c.id === cat.centerId);
 				const newSchedule = { ...center.doctorSchedule };
-				newSchedule[day].slots = newSchedule[day].slots.filter(s => s !== time);
-				result = await slotManager.setHospitalSchedule(cat.centerId, newSchedule);
+				if (newSchedule[day]?.slots) {
+					newSchedule[day].slots = newSchedule[day].slots.filter(s => s !== time);
+					result = await slotManager.setHospitalSchedule(cat.centerId, newSchedule);
+				} else {
+					result = { success: true };
+				}
 			}
 
 			if (!result.success) {
@@ -816,7 +828,7 @@ const SlotEditor = ({ editingSlots, slotConfig, onSave, onClose }) => {
 			...prev,
 			[day]: {
 				...prev[day],
-				slots: prev[day].slots.filter((s) => s !== slot),
+				slots: (prev[day]?.slots || []).filter((s) => s !== slot),
 			},
 		}))
 	}
@@ -977,7 +989,7 @@ const SlotEditor = ({ editingSlots, slotConfig, onSave, onClose }) => {
 											Bulk Add
 										</button>
 										<div className="text-sm text-gray-600">
-											{editedSlots[day].slots.length} slots
+											{(editedSlots[day].slots || []).length} slots
 										</div>
 									</div>
 								)}
@@ -1011,7 +1023,7 @@ const SlotEditor = ({ editingSlots, slotConfig, onSave, onClose }) => {
 										</button>
 									</div>
 									<div className="flex flex-wrap gap-2">
-										{editedSlots[day].slots.map((slot) => {
+										{(editedSlots[day].slots || []).map((slot) => {
 											const isOverlapping = overlaps[day]?.some(o => o.slot === slot);
 											return (
 												<div

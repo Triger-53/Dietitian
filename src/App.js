@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -37,11 +37,20 @@ import AppointmentSlotManager from "./admin/AppointmentSlotManager"
 import AdminSessions from "./admin/AdminSessions"
 import AdminAIChat from "./admin/AdminAIChat"
 import ChatWidget from "./components/ChatWidget"
-import ThemeToggle from "./components/ThemeToggle"
+import FloatingReviewButton from "./components/FloatingReviewButton"
+import ReviewModal from "./components/ReviewModal"
+import { getAllReviewsAsync } from "./data/reviews"
+import { useAuth } from "./auth/AuthProvider"
 
 function AppContent() {
 	const location = useLocation()
 	const isAdminRoute = location.pathname.startsWith("/admin")
+	const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
+
+	const handleReviewSubmitted = (newReview) => {
+		// You might want to update some global state or just show a success message
+		console.log("New review submitted:", newReview)
+	}
 
 	useEffect(() => {
 		// Scroll to top on route change
@@ -219,7 +228,16 @@ function AppContent() {
 
 			{!isAdminRoute && <Footer />}
 			{!isAdminRoute && <ChatWidget />}
-			{!isAdminRoute && <ThemeToggle />}
+			{!isAdminRoute && (
+				<>
+					<FloatingReviewButton onClick={() => setIsReviewModalOpen(true)} />
+					<ReviewModal
+						isOpen={isReviewModalOpen}
+						onClose={() => setIsReviewModalOpen(false)}
+						onReviewSubmitted={handleReviewSubmitted}
+					/>
+				</>
+			)}
 		</div>
 	)
 }

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react"
 import SEO from "../components/SEO"
 import CtaIllustration from "../components/CtaIllustration"
-import ReviewModal from "../components/ReviewModal"
-import FloatingReviewButton from "../components/FloatingReviewButton"
 import MultiReviewSlider from "../components/MultiReviewSlider"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
@@ -30,7 +28,6 @@ import { getAllReviewsAsync } from "../data/reviews"
 
 const Home = () => {
 	const [services, setServices] = useState([])
-	const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
 	const [reviews, setReviews] = useState([])
 
 	useEffect(() => {
@@ -89,20 +86,6 @@ const Home = () => {
 		}
 	}, [])
 
-	const handleOpenReviewModal = () => {
-		setIsReviewModalOpen(true)
-	}
-
-	const handleCloseReviewModal = () => {
-		setIsReviewModalOpen(false)
-	}
-
-	const handleReviewSubmitted = (newReview) => {
-		const reviewWithRating = { ...newReview, rating: 5 }
-		setReviews((prevReviews) => [reviewWithRating, ...prevReviews])
-	}
-
-
 	return (
 		<>
 			<SEO
@@ -110,17 +93,11 @@ const Home = () => {
 				description="Compassionate and professional nutrition counseling services for all ages. Mariya Udaipurwala is a certified Dietitian with over 25 years of experience."
 			/>
 			<div className="min-h-screen selection:bg-primary-200 selection:text-primary-900">
-				<FloatingReviewButton onClick={handleOpenReviewModal} />
-				<ReviewModal
-					isOpen={isReviewModalOpen}
-					onClose={handleCloseReviewModal}
-					onReviewSubmitted={handleReviewSubmitted}
-				/>
 
 				{/* Hero Section - Magazine Style Center Layout */}
-				<section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 pb-20">
+				< section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 pb-20" >
 					{/* Background Glows (Sunlight) */}
-					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-orange-100/40 to-transparent blur-[100px] -z-10 rounded-full pointer-events-none"></div>
+					< div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-orange-100/40 to-transparent blur-[100px] -z-10 rounded-full pointer-events-none" ></div >
 					<div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100/30 blur-[80px] -z-10 rounded-full pointer-events-none"></div>
 
 					<div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -141,8 +118,8 @@ const Home = () => {
 							{/* Headline */}
 							<h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-medical-800 mb-6 leading-[1.1] tracking-tight text-balance">
 								Nourish Your Body,<br />
-								<span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-primary-500 to-accent-500">
-									Heal Your Life.
+								<span className="bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-700 filter drop-shadow-md">
+									Fuel Your Life.
 								</span>
 							</h1>
 
@@ -184,10 +161,10 @@ const Home = () => {
 
 						</motion.div>
 					</div>
-				</section>
+				</section >
 
 				{/* Services Overview - Glass Cards */}
-				<section className="section-padding relative">
+				< section className="section-padding relative" >
 					<div className="max-w-7xl mx-auto relative z-10">
 						<div className="flex flex-col md:flex-row justify-between items-end mb-12">
 							<div className="max-w-2xl">
@@ -232,10 +209,10 @@ const Home = () => {
 							</Link>
 						</div>
 					</div>
-				</section>
+				</section >
 
 				{/* About Section - Split with Image */}
-				<section className="section-padding overflow-hidden">
+				< section className="section-padding overflow-hidden" >
 					<div className="max-w-7xl mx-auto">
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 							<div className="relative order-2 lg:order-1">
@@ -298,10 +275,10 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section >
 
 				{/* Testimonials - Clean Slider */}
-				<section className="section-padding bg-white relative">
+				< section className="section-padding bg-white relative" >
 					<div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-medical-50 to-white pointer-events-none"></div>
 					<div className="max-w-7xl mx-auto relative z-10">
 						<div className="text-center mb-16">
@@ -316,12 +293,12 @@ const Home = () => {
 							<MultiReviewSlider reviews={reviews} />
 						</div>
 					</div>
-				</section>
+				</section >
 
 				{/* CTA Section - Floating Glass Card */}
-				<section className="py-24 px-4 sm:px-6 relative overflow-hidden">
+				< section className="py-24 px-4 sm:px-6 relative overflow-hidden" >
 					{/* Background abstract */}
-					<div className="absolute inset-0 bg-primary-50/50"></div>
+					< div className="absolute inset-0 bg-primary-50/50" ></div >
 					<div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent-100/40 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
 
 					<div className="max-w-5xl mx-auto relative z-10">
@@ -348,8 +325,8 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</section >
+			</div >
 		</>
 	)
 };

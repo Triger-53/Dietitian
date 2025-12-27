@@ -205,9 +205,9 @@ export default function Dashboard() {
 								</div>
 							</div>
 							<div className="flex flex-wrap items-center gap-3">
-								<Link to="/appointment" className="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold shadow-md transition-all hover:shadow-lg flex items-center gap-2"><FaCalendarAlt /> Book Appointment</Link>
-								<button onClick={() => setIsModalOpen(true)} className="px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-semibold shadow-md transition-all hover:shadow-lg flex items-center gap-2"><FaPencilAlt /> Edit Profile</button>
-								<button onClick={() => signOut().catch((err) => console.error(err))} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white rounded-xl font-semibold shadow-md transition-all hover:shadow-lg">Log out</button>
+								<Link to="/appointment" className="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold shadow-md transition-all hover:shadow-lg flex items-center gap-2"><FaCalendarAlt /> Book Appointment</Link>
+								<button onClick={() => setIsModalOpen(true)} className="px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-semibold shadow-md transition-all hover:shadow-lg flex items-center gap-2"><FaPencilAlt /> Edit Profile</button>
+								<button onClick={() => signOut().catch((err) => console.error(err))} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white rounded-full font-semibold shadow-md transition-all hover:shadow-lg">Log out</button>
 							</div>
 						</header>
 

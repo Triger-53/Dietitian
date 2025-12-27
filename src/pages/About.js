@@ -361,13 +361,13 @@ const About = () => {
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Link
 								to="/appointment"
-								className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors duration-200 flex items-center justify-center">
+								className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-bold border-2 border-white py-3 px-8 rounded-full transition-colors duration-200 flex items-center justify-center">
 								<Calendar className="w-5 h-5 mr-2" />
 								Book Your First Visit
 							</Link>
 							<Link
 								to="/contact"
-								className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200 flex items-center justify-center">
+								className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-bold py-3 px-8 rounded-full transition-colors duration-200 flex items-center justify-center">
 								<Phone className="w-5 h-5 mr-2" />
 								Call to Learn More
 							</Link>

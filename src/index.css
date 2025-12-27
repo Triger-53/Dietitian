@@ -177,7 +177,9 @@
   }
 
   .btn-primary:hover {
-    background-color: var(--color-accent-600);
+    background-color: rgb(var(--color-accent-600));
+    color: rgb(var(--color-medical-800));
+    /* Keep text dark on mango hover */
     box-shadow: 0 8px 25px rgba(255, 183, 3, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
@@ -191,7 +193,9 @@
   }
 
   .btn-secondary:hover {
-    background-color: var(--color-green-hover);
+    background-color: rgb(var(--color-green-hover));
+    color: white;
+    /* Ensure text stays white on green hover */
     box-shadow: 0 8px 25px rgba(127, 183, 126, 0.4);
   }
 
