@@ -173,14 +173,14 @@
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
     border-radius: 9999px;
     /* Pill shape for premium feel */
-    box-shadow: 0 4px 15px rgba(255, 183, 3, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 184, 3, 0.515), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
   .btn-primary:hover {
     background-color: rgb(var(--color-accent-600));
     color: rgb(var(--color-medical-800));
     /* Keep text dark on mango hover */
-    box-shadow: 0 8px 25px rgba(255, 183, 3, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 184, 3, 0.517), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   }
 
   /* 🍃 Secondary Button - FRESH LEAF */
